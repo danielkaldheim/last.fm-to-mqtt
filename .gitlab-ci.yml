@@ -16,7 +16,6 @@ variables:
   # improved performance.
   DOCKER_DRIVER: overlay2
   # GITLAB_TOKEN: $CI_JOB_TOKEN
-  GITLAB_TOKEN: NKcxrCeaKkLheXs8gzjm
   GITLAB_URL: $CI_SERVER_URL
 
 services:
