@@ -1,7 +1,7 @@
 {
   "name": "lastfm-to-mqtt",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sends last playing song to mqtt",
   "main": "index.js",
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -26,8 +26,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andregardi/ts-express.git"
+    "url": "git+https://gitlab.crudus.no/docker/last.fm-to-mqtt.git"
   },
-  "author": "",
+  "author": "daniel@kaldheim.org",
   "license": "MIT"
 }
