@@ -5,7 +5,6 @@ import express from 'express';
 import * as http from 'http';
 import * as WebSocket from 'ws';
 import { find, isEqual } from 'lodash';
-import moment from 'moment';
 
 import Track from './track.interface';
 
@@ -50,7 +49,6 @@ setInterval(async () => {
 
   if (trackmbid !== id) {
     const mbid = trackData.album.mbid;
-    // console.log(trackData);
 
     const images = trackData.image;
     const image = find(images, { size: 'extralarge' });
@@ -68,7 +66,6 @@ setInterval(async () => {
       image: imageUrl,
     };
 
-    console.log(track);
     client.publish('lastfm/' + process.env.LASTFM_USER, JSON.stringify(track));
     trackmbid = id;
   }
@@ -90,6 +87,10 @@ app.get('/', (req, res) => {
 
 app.get('/client.js', (req, res) => {
   res.sendFile(path.resolve(process.env.PWD) + '/client.js');
+});
+
+app.get('/style.css', (req, res) => {
+  res.sendFile(path.resolve(process.env.PWD) + '/style.css');
 });
 
 server.listen(port, () => {

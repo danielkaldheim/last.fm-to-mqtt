@@ -3,20 +3,15 @@ import { debounce } from 'ts-debounce';
 
 const adjustImageSize = debounce(() => {
   const width = window.innerWidth;
-  console.log(width);
   const padding = 40;
   const trackImage = document.getElementById('trackImage');
   if (trackImage) {
-    trackImage.style.width =
-      (width <= 500 ? width - padding : 500) + 'px';
-    trackImage.style.height =
-      (width <= 500 ? width - padding : 500) + 'px';
+    trackImage.style.width = (width <= 500 ? width - padding : 500) + 'px';
+    trackImage.style.height = (width <= 500 ? width - padding : 500) + 'px';
   }
   const infoBox = document.getElementById('infoBox');
   if (infoBox) {
-    infoBox.style.width =
-      (width <= 500 ? width - padding : 500) +
-      'px';
+    infoBox.style.width = (width <= 500 ? width - padding : 500) + 'px';
   }
 }, 250);
 adjustImageSize();
@@ -77,13 +72,12 @@ const setContent = (track: Track) => {
 };
 
 const startWebsocket = () => {
-  // const ws = new WebSocket(`wss://lastfm.kaldheim.org/ws`);
   const ws = new WebSocket(
     process.env.WS_URL ? process.env.WS_URL : 'ws://localhost:8080'
   );
-  ws.onopen = () => {
-    console.log('ws open');
-  };
+  // ws.onopen = () => {
+  //   console.log('ws open');
+  // };
 
   ws.onmessage = (message) => {
     const track: Track = JSON.parse(message.data);
@@ -91,7 +85,7 @@ const startWebsocket = () => {
   };
 
   ws.onclose = () => {
-    console.log('ws closed');
+    // console.log('ws closed');
     setTimeout(startWebsocket, 5000);
   };
 };
