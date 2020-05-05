@@ -37,7 +37,8 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "watch": "webpack --config webpack.config.js --watch --progress"
+    "watch": "webpack --config webpack.config.js --watch --progress",
+    "start": "cd dist && node main.js"
   },
   "repository": {
     "type": "git",
