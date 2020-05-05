@@ -1,4 +1,6 @@
 .env
+.env.prod
 app/*.js
 
 node_modules
+dist
