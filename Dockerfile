@@ -5,7 +5,6 @@ ADD package.json ./
 ADD yarn.lock ./
 ADD tsconfig.json ./
 ADD webpack.config.js ./
-ADD webpack.config.client.js ./
 ADD .env.prod ./.env
 RUN yarn install && yarn build
 
