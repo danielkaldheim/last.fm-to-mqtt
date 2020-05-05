@@ -1,3 +1,10 @@
+# [1.2.0](https://gitlab.crudus.no/docker/last.fm-to-mqtt/compare/v1.1.0...v1.2.0) (2020-05-05)
+
+
+### Features
+
+* **webpack:** updated webpack to compile scss to css, added more text to readme ([4bc28ce](https://gitlab.crudus.no/docker/last.fm-to-mqtt/commit/4bc28ce2761200146bd86c41a5969e88cfc0ce6e))
+
 # [1.1.0](https://gitlab.crudus.no/docker/last.fm-to-mqtt/compare/v1.0.0...v1.1.0) (2020-05-05)
 
 
