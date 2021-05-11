@@ -10,7 +10,7 @@
     "file-loader": "^6.0.0",
     "follow-redirects": "^1.11.0",
     "lastfm-node-client": "^2.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.25.3",
     "mqtt": "^4.0.0",
     "ts-debounce": "^2.0.1",
