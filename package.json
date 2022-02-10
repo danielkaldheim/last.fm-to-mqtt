@@ -24,7 +24,7 @@
     "@types/lodash": "^4.14.150",
     "@types/ws": "^7.2.4",
     "dotenv-webpack": "^1.7.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2",
     "shebang-loader": "^0.0.1",
     "style-loader": "^1.2.1",
