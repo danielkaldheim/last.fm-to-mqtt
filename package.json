@@ -11,7 +11,7 @@
     "follow-redirects": "^1.11.0",
     "lastfm-node-client": "^2.2.0",
     "lodash": "^4.17.15",
-    "moment": "^2.25.3",
+    "moment": "^2.29.4",
     "mqtt": "^4.0.0",
     "ts-debounce": "^2.0.1",
     "utf-8-validate": "^5.0.2",
